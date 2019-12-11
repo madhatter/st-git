@@ -14,9 +14,11 @@ license=('MIT')
 depends=('libxft')
 makedepends=('ncurses' 'libxext' 'git')
 source=('git://git.suckless.org/st')
-_patches=('st-alpha-0.8.2.diff')
+_patches=('st-alpha-0.8.2.diff'
+          'st-scrollback-0.8.2-custom.diff')
 source=(${source[@]} ${_patches[@]})
 sha1sums=('SKIP'
+          'SKIP'
           'SKIP')
 provides=("st")
 conflicts=("st")
